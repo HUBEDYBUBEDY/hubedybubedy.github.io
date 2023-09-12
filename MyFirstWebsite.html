@@ -1,0 +1,73 @@
+<!DOCTYPE html>		<!-- used to state the language, allows browsers to detect type of HTML -->
+<html lang="en">	<!-- signifies start of the document-->
+
+<head>
+	<title>My First Webpage</title>							<!-- shown in the browser tab -->
+	<meta charset="UTF-8">									<!-- sets the character set for the broswer to display -->
+	<meta name="keywords" content="html introduction">		<!-- used by search engine to make page easier to find -->
+	<meta name="description" content="HTML Basics">
+</head>
+
+<body>
+	<h1>Welcome to my website!</h1>							<!-- header, uses large font in bold -->
+	<p>A basic page showing some features of html</p>		<!-- paragraph, uses smaller font -->
+	<h3>My likes</h3>										<!-- different header types can be used -->
+	<ul>						<!-- unordered list, uses bullet points -->
+		<li>Cake</li>			<!-- list item, shown with bullet point -->
+		<li>Biscuits</li>
+		<li>Eggs</li>
+	</ul>
+	<!-- can also use <ol> instead of <ul> for ordered list with numbers -->
+	<ol start=4>				<!-- can define the starting number of an ordered list -->				
+		<li>Cake</li>			
+		<li>Biscuits</li>
+		<li>Eggs</li>
+	</ol>
+	
+	<!-- image, src states the source file name (and path), alt displays alternative text if image fails to load -->
+	<img src="Egg.jpeg" alt="Egg">
+	<!-- page break, forces the next information onto the next line -->
+	<br>
+	<!-- anchor-specifies link to other webpage, href gives the hyperlink reference -->
+	<a href="http://www.google.com">Jump to Google</a>
+	<br>
+	
+	<!-- pre attribute ensures all text is presented exactly as written (spaces, breaks and tabs included) -->
+	<pre>
+			&#128511;				<!-- & reperesents a character entity, #128511 represents an emoji to display -->
+		
+		<input type="email">		<!-- creates input box where text can be entered -->
+		<input type="submit">		<!-- creates button labelled "submit" -->
+		<input type="checkbox">		<!-- creates box that can be checked --->
+		
+		<input type="email" required>		<!-- specifies the type box is required -->
+		<input type="submit" disabled>		<!-- specifies the submit button is initially disabled -->
+		<input type="checkbox" disabled>	<!-- specifies the checkbox is initially disabled -->
+	</pre>
+	
+	<table>						<!-- Creates a table -->
+		<thead>					<!-- Adds a header using bold text -->
+			<th>Col 1</th>		<!-- Adds a column in the header -->
+			<th>Col 2</th>
+			<th>Col 3</th>
+		</thead>
+		<tr>					<!-- Adds a row to the table -->
+			<td>&#128512;</td>	<!-- Adds a data entry in the row -->
+			<td>&#128513;</td>
+			<td>&#128514;</td>
+		</tr>
+		<tr>
+			<td>Double Beans</td>	<!-- Not every column needs to have an entry in every row -->
+		</tr>
+	</table>
+	
+	<br>
+	<a href="https://www.manchester.ac.uk/" target="_blank"> 	<!-- target="_blank" opens the link in a new tab -->
+	Golly I do love Manchester</a>
+	
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<!-- download attibute will download the file with the name given -->
+	<a href="Egg.jpeg" download="Themostincredibleegg" target="_blank">Free egg download!!!</a>
+	
+</body>
+</html>
