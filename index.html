@@ -1,49 +1,34 @@
-<!DOCTYPE html>		<!-- used to state the language, allows browsers to detect type of HTML -->
-<html lang="en">	<!-- signifies start of the document-->
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<title>My First Webpage</title>							<!-- shown in the browser tab -->
-	<meta charset="UTF-8">									<!-- sets the character set for the broswer to display -->
-	<meta name="keywords" content="html introduction">		<!-- used by search engine to make page easier to find -->
-	<meta name="description" content="HTML Basics">
+	<title>Theodore Colbert</title>
+
+	<meta charset="UTF-8">
+	<meta name="description" content="Personal website of Theodore Colbert aka HUBEDYBUBEDY">
+	<meta name="keywords" content="hubedybubedy, theodore, colbert">
+	<meta name="author" content="Theodore Colbert">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-	<h1>Welcome to my website!</h1>							<!-- header, uses large font in bold -->
-	<p>A basic page showing some features of html</p>		<!-- paragraph, uses smaller font -->
-	<h3>My likes</h3>										<!-- different header types can be used -->
-	<ul>						<!-- unordered list, uses bullet points -->
-		<li>Cake</li>			<!-- list item, shown with bullet point -->
-		<li>Biscuits</li>
-		<li>Eggs</li>
-	</ul>
-	<!-- can also use <ol> instead of <ul> for ordered list with numbers -->
-	<ol start=4>				<!-- can define the starting number of an ordered list -->				
-		<li>Cake</li>			
-		<li>Biscuits</li>
-		<li>Eggs</li>
-	</ol>
-	
-	<!-- image, src states the source file name (and path), alt displays alternative text if image fails to load -->
-	<img src="Egg.jpeg" alt="Egg">
-	<!-- page break, forces the next information onto the next line -->
-	<br>
-	<!-- anchor-specifies link to other webpage, href gives the hyperlink reference -->
-	<a href="http://www.google.com">Jump to Google</a>
-	<br>
+	<nav>
+		<a href="">
+			<img src="Theodore Colbert.jpg" alt="Theodore Colbert">
+			<img src="HUBEDYBUBEDY.png" style="padding-left: 0; padding-right: 0;" alt="HUBEDYBUBEDY">
+		</a>
+
+		<ul><h1>
+			<li><a href="">About Me</a></li>
+			<li><a href="">Things I've Done</a></li>
+			<li><a href="">Contact Me</a></li>
+		</ul></h1>
+	</nav>
 	
 	<!-- pre attribute ensures all text is presented exactly as written (spaces, breaks and tabs included) -->
-	<pre>
-			&#128511;				<!-- & reperesents a character entity, #128511 represents an emoji to display -->
-		
-		<input type="email">		<!-- creates input box where text can be entered -->
-		<input type="submit">		<!-- creates button labelled "submit" -->
-		<input type="checkbox">		<!-- creates box that can be checked --->
-		
-		<input type="email" required>		<!-- specifies the type box is required -->
-		<input type="submit" disabled>		<!-- specifies the submit button is initially disabled -->
-		<input type="checkbox" disabled>	<!-- specifies the checkbox is initially disabled -->
-	</pre>
+	&#128511;				<!-- & reperesents a character entity, #128511 represents an emoji to display -->
 	
 	<table>						<!-- Creates a table -->
 		<thead>					<!-- Adds a header using bold text -->
