@@ -2,9 +2,11 @@
 <html lang="en">
 
 <head>
+	<!-- Creates image and title that appears on the tab -->
 	<link rel="shortcut icon" href="Tab Circle.png" type="image">
 	<title>Theodore Colbert</title>
 
+	<!-- Sets infromation for the browser to correctly handle the website-->
 	<meta charset="UTF-8">
 	<meta name="description" content="Personal website of Theodore Colbert aka HUBEDYBUBEDY">
 	<meta name="keywords" content="hubedybubedy, theodore, colbert">
@@ -12,13 +14,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/a6ec9b1109.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 	<nav>
 		<a href="">
-			<img src="Theodore Colbert.jpeg" alt="Theodore Colbert">
-			<img src="HUBEDYBUBEDY.jpeg" style="padding-left: 0; padding-right: 0;" alt="HUBEDYBUBEDY">
+			<img class="logo" title="Theodore" src="Theodore Colbert.jpeg" alt="Theodore">
+		</a>
+		<a href="">
+			<img class="logo" title="HUBEDYBUBEDY" src="HUBEDYBUBEDY.jpeg" style="padding-left: 0; padding-right: 0;" alt="HUBEDYBUBEDY">
 		</a>
 
 		<ul><h1>
@@ -26,6 +31,13 @@
 			<li><a href="">Things I've Done</a></li>
 			<li><a href="">Contact Me</a></li>
 		</ul></h1>
+
+		<input type="checkbox" id="menu">
+			<label for="menu" class="menuButton">
+				<!-- Creates menu icon using a font from 'fontawesome' -->
+				<i class="fas fa-bars"></i>
+			</label>
+		</input>
 	</nav>
 	
 </body>

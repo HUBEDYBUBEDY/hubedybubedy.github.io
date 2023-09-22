@@ -9,6 +9,7 @@ body {
     color: #ffffff;
 }
 
+/*aligns nav elements to flex accross width of screen */
 nav {
     height: 100px;
     background-color: #359e88;
@@ -18,30 +19,45 @@ nav {
     display: flex;
 }
 
-nav img {
+/* Creates circular logo image */
+img.logo {
     height: 60px;
     width: 60px;
     padding: 20px;
     border-radius: 50%;
 }
 
+/* Nav links will flex across whole navbar width, starting at the right */
 nav ul {
     flex: 1;
-    text-align: right;
+    float: right;
+    /* margin from edge of viewport */
+    margin-right: 30px;
 }
 
 nav li {
-    padding: 30px;
-    padding-right: 60px;
-    display: inline-flex;
+    margin: 0 60px;
+    display: inline-block;
 }
 
 nav a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 1em;
+    transition: .3s;
 }
 
-nav a:hover {
+/* Changes colour of text when mouse hovered over with smooth transition */
+nav a:hover, a:active {
     color: #bbbbbb;
+    transition: .3s;
+}
+
+.menuButton {
+    font-size: 30px;
+    float: right;
+    margin-right: 30px;
+}
+
+#menu{
+    display: none;
 }
