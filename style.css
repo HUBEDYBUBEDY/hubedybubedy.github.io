@@ -32,7 +32,9 @@ img.logo {
 nav ul {
     flex: 1;
     float: right;
+    /* Removed due to unwanted manipulation of images when resizing
     transition: .3s;
+    */
     /* elements will be centered for the 100px navbar height */
     line-height: 100px;
 }
@@ -40,7 +42,9 @@ nav ul {
 nav li {
     margin-right: 120px;
     display: inline-block;
+    /* Removed due to unwanted manipulation of images when resizing
     transition: .3s;
+    */
 }
 
 nav a {
@@ -109,9 +113,33 @@ nav a:hover, a:active {
 
 /* === MAIN CONTENT === */
 
+div.text {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+p.main {
+    width: 600px;
+}
+
+p a {
+    color: #ffffff;
+    transition: .3s;
+}
+
+/* Changes colour of text when mouse hovered over with smooth transition */
+p a:hover, a:active {
+    color: #bbbbbb;
+    transition: .3s;
+}
+
 div.main {
-    width: 100%;
-    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 img.main {
@@ -119,4 +147,25 @@ img.main {
     width: 200px;
     padding: 40px;
     border-radius: 50%;
+}
+
+@media (max-width: 560px) {
+    div.main {
+        display: block;
+    }
+}
+
+div.social {
+    display: inline-flex;
+    width: 600px;
+}
+
+img.social {
+    height: 40px;
+    width: 40px;
+    padding-right: 10px;
+}
+
+p.social {
+    flex: 1;
 }
