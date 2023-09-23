@@ -10,6 +10,8 @@ body {
     color: #ffffff;
 }
 
+/* === NAV BAR === */
+
 /*aligns nav elements accross width of screen */
 nav {
     height: 100px;
@@ -61,29 +63,32 @@ nav a:hover, a:active {
     cursor: pointer;
     display: none;
 }
-
 #menu{
     display: none;
 }
 
+/* Places elements closer together when screen width decreases */
 @media (max-width: 1100px) {
     nav li {
         margin-right: 30px;
     }
 }
 
+/* Replaces elements with menu button */
 @media (max-width: 725px) {
     .menuButton {
         float: right;
         display: block;
     }
 
+    /* Spans elements vertically across entire screen */
     nav ul {
         position: fixed;
         width: 100%;
         height: 100vh;
         line-height: 0;
         top: 100px;
+        /* When unchecked, elements are positioned to the left of the screen */
         left: 100%;
         text-align: center;
         background: none;
@@ -95,8 +100,23 @@ nav a:hover, a:active {
         display: block;
     }
 
+    /* When checked, elements are positioned to the centre with a transition */
     #menu:checked ~ ul {
         left: 0;
         background: #359e88;
     }
+}
+
+/* === MAIN CONTENT === */
+
+div.main {
+    width: 100%;
+    align-items: center;
+}
+
+img.main {
+    height: 200px;
+    width: 200px;
+    padding: 40px;
+    border-radius: 50%;
 }
